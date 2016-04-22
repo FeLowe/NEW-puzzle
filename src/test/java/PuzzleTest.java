@@ -25,8 +25,9 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
  // }
 
   @Test
-  public void puzzleMethod_forUserInputSentence_string(){
-    // Blank ->MAIN CLASS<- myBlank = new Blank();  ->THIS CREATES A INSTANCE THE MAIN CLASS<-
-    // assertEquals(FirstArgument, SecondArgument()) <-METHOD THAT COMPARES 1ST AND 2ND ARGUMENTS->
+  public void puzzleMethod_TakeUserSentenceAndReturnItAsIs_string(){
+    Puzzle userSentence = new Puzzle();
+    String expected = "cat";
+    assertEquals(expected, userSentence.puzzleMethod("cat"));
   }
 }
