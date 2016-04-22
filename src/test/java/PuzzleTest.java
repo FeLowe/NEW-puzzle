@@ -30,4 +30,10 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
     String expected = "cat";
     assertEquals(expected, userSentence.puzzleMethod("cat"));
   }
+  @Test
+  public void puzzleMethod_TakeUserSentenceAndReplaceVowelForDash_string(){
+    Puzzle userSentence = new Puzzle();
+    String expected = "c-t";
+    assertEquals(expected, userSentence.puzzleMethod("cat"));
+  }
 }
