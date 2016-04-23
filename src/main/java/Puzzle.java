@@ -1,4 +1,3 @@
-import java.util.HashMap;
 public class Puzzle{
 
   public String puzzleMethod(String sentence) {

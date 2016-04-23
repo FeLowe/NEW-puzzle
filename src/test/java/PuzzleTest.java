@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to change "BlankTest" according of how you named it on your BlankTest.java file//
+public class PuzzleTest { //(GOES AFTER PuzzleTest) needs to change "BlankTest" according of how you named it on your BlankTest.java file//
  //  public WebDriver webDriver = new HtmlUnitDriver();
  //
  //  @Override
@@ -31,13 +31,13 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
     assertEquals(expected, testPuzzle.puzzleMethod("a"));
   }
   @Test
-  public void puzzleMethod_TakesUserWordAndReplacesTwoVowelsWithAdash_string(){
+  public void puzzleMethod_TakesWordAndReplacesTwoVowelsWithAdash_string(){
     Puzzle userSentence = new Puzzle();
     String expected = "c-rr-t";
     assertEquals(expected, userSentence.puzzleMethod("carrot"));
   }
   @Test
-  public void puzzleMethod_TakesUserWordAndReplacesAllVowelsWithAdash_string(){
+  public void puzzleMethod_TakesWordAndReplacesAllVowelsWithAdash_string(){
     Puzzle userSentence = new Puzzle();
     String expected = "--r--l-";
     assertEquals(expected, userSentence.puzzleMethod("aureola"));
