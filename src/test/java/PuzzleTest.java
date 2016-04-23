@@ -31,9 +31,15 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
     assertEquals(expected, testPuzzle.puzzleMethod("a"));
   }
   @Test
-  public void puzzleMethod_TakesUserWordAndReplacesAllVowelsWithAdash_string(){
+  public void puzzleMethod_TakesUserWordAndReplacesTwoVowelsWithAdash_string(){
     Puzzle userSentence = new Puzzle();
     String expected = "c-rr-t";
     assertEquals(expected, userSentence.puzzleMethod("carrot"));
+  }
+  @Test
+  public void puzzleMethod_TakesUserWordAndReplacesAllVowelsWithAdash_string(){
+    Puzzle userSentence = new Puzzle();
+    String expected = "--r--l";
+    assertEquals(expected, userSentence.puzzleMethod("aureola"));
   }
 }
