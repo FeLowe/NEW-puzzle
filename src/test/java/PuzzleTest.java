@@ -5,24 +5,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PuzzleTest { //(GOES AFTER PuzzleTest) needs to change "BlankTest" according of how you named it on your BlankTest.java file//
- //  public WebDriver webDriver = new HtmlUnitDriver();
- //
- //  @Override
- // public WebDriver getDefaultDriver() {
- //   return webDriver;
- // }
- //
- // @ClassRule
- // public static ServerRule server = new ServerRule();
- //
- // @Test
- // public void rootTest() {
- //   goTo("http://localhost:4567/");
- //    fill("#???").with("?");// (fill: method that calls from your "home.vtl" file)(with: fake user iNPUT YOU CREATED JUST TO DO A TEST).
- //    submit(".btn");
- //    assertThat(pageSource()).contains("what you want to be found related to your method");
- // }
+public class PuzzleTest extends FluentTest{
+    public WebDriver webDriver = new HtmlUnitDriver();
+
+  @Override
+ public WebDriver getDefaultDriver() {
+   return webDriver;
+ }
+
+ @ClassRule
+ public static ServerRule server = new ServerRule();
+
+ @Test
+ public void rootTest() {
+   goTo("http://localhost:4567/");
+    fill("#word-sentence").with("caterpillar");
+    submit(".btn");
+    assertThat(pageSource()).contains("c-t-rp-ll-r");
+ }
 
   @Test
   public void puzzleMethod_TakesVowelAndRepacesItWithAdash_string(){
