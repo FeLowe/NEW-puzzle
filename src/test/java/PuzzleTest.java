@@ -25,13 +25,13 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
  // }
 
   @Test
-  public void puzzleMethod_TakeUserSentenceAndReturnItAsIs_string(){
-    Puzzle userSentence = new Puzzle();
-    String expected = "cat";
-    assertEquals(expected, userSentence.puzzleMethod("cat"));
+  public void puzzleMethod_TakesVowelAndRepacesItWithAdash_string(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "-";
+    assertEquals(expected, testPuzzle.puzzleMethod("a"));
   }
   @Test
-  public void puzzleMethod_TakeUserSentenceAndReplaceVowelForDash_string(){
+  public void puzzleMethod_TakesUserWordAndReplaceAllVowelsWithAdash_string(){
     Puzzle userSentence = new Puzzle();
     String expected = "c-t";
     assertEquals(expected, userSentence.puzzleMethod("cat"));
