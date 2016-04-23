@@ -25,7 +25,7 @@ Phrase to be guessed: "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v
 
 ## Known Bugs
 
-Unkown bugs
+Unkonw bugs
 
 ## Support and contact details
 
@@ -39,4 +39,4 @@ Java, Spark, Gradle, Velocity, Bootstrap
 
 Application can be used under MIT licenses.
 
-Copyright (c) 2016 Fernnada Lowe at Epicodus.
+Copyright (c) 2016 Fernanda Lowe at Epicodus.
