@@ -33,7 +33,7 @@ public class PuzzleTest{ //extends FluentTest(GOES AFTER PuzzleTest) needs to ch
   @Test
   public void puzzleMethod_TakesUserWordAndReplacesAllVowelsWithAdash_string(){
     Puzzle userSentence = new Puzzle();
-    String expected = "c-rr-ot";
+    String expected = "c-rr-t";
     assertEquals(expected, userSentence.puzzleMethod("carrot"));
   }
 }
